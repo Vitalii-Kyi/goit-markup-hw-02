@@ -1,0 +1,43 @@
+
+
+.hero-title {
+    color: #FFFFFF;
+}
+
+.hero-section {
+    background-color: #2F303A;
+}
+
+
+
+
+.button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #188CE8;
+}
+
+.button:focus {
+    background-color: #2196F3;
+}
+
+
+
+
+.team-section {
+    background-color: #F5F4FA;
+}
+
+.card-bg {
+    background-color: #FFFFFF;
+}
+
+
+.footer-section {
+    background-color: #2F303A;
+}
