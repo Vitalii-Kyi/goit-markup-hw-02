@@ -8,39 +8,35 @@
     color: #FFFFFF;
 }
 
-.hero-section {
+/*.hero-section {
     background-color: #2F303A;
-}
+}*/
 
 
 .button {
-    background-color: #2196F3;
+    background-color: #4D5AE5;
     color: #FFFFFF;
     border: 0px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: #188CE8;
-}
-
+.button:hover,
 .button:focus {
-    background-color: #2196F3;
+    background-color:#404BBF;
 }
-
 
 .visually-hidden {
     position: absolute;
         white-space: nowrap;
         width: 1px;
         height: 1px;
-         overflow: hidden;
+        overflow: hidden;
         border: 0;
         padding: 0;
         clip: rect(0 0 0 0);
-         clip-path: inset(50%);
-         margin: -1px;
+        clip-path: inset(50%);
+        margin: -1px;
   }
 
 
