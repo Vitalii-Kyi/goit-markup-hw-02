@@ -39,8 +39,9 @@ body {
     text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
     color: #404bbf;
 }
 
@@ -62,7 +63,7 @@ body {
     color: #2e2f42;
 }
 
-.header-list {
+.nav-list {
     list-style: none;
     font-weight: 500;
     font-size: 16px;
@@ -80,6 +81,10 @@ body {
     color: #434455;
 }
 
+.address-lis:hover,
+.address-lis:focus {
+    background: color #404bbf;
+}
 
 /*--------Hero--------*/
 .hero-section {
@@ -105,7 +110,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    /*color: #ffffff;*/
+    color: #ffffff;
     background-color: #4d5ae5;
     border: 0px;
     border-radius: 4px;

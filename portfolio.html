@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>WEBSTUDIO-Portfolio</title>
+    <title>WEBSTUDIO-Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>        
+
+    <header>
+        <!--Main menu-->
         <nav>
-            <a href="./index.html">WebStudio</a>
-            <ul>
-                <li><a href="./index.html">Studio</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
+            <a class="logo" href="./index.html">web<span class="logo-studio">studio</span>
+            </a>
+            
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-link" href="./index.html">Studio</a>
+                </li>
+                <li>
+                    <a class="nav-link current" href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
             </ul>
         </nav>
+
         <address>
-            <ul>
+            <ul class="address-list">
                 <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
-            </ul>
-        </address>          
+            </ul>            
+        </address>
     </header>
 
     <main>
@@ -35,7 +49,7 @@
             <h1 class="visually-hidden">Portfolio</h1>
             
             <!--Filter-->
-            <ul>
+            <ul class="list">
                 <li><button type="button">All</button></li>
                 <li><button type="button">Web Site</button></li>
                 <li><button type="button">App</button></li>
@@ -44,7 +58,7 @@
             </ul>
 
             <!--Project Card-->
-            <!--Row 1-->
+
             <ul>
                 <li>
                     <img src="./images/portfolio/projcard-img01.jpg" alt="Banking App Interface Concept" width="360" height="300">
