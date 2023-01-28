@@ -1,14 +1,20 @@
-:root {
+/*
+root {
 
 }
-
+*/
 
 
 /*--------General styles--------*/
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
+    background: ffffff;
 }
+
+
+
+
 
 /*--section-1 & portfolio page--*/
 .visually-hidden {
@@ -57,6 +63,7 @@ body {
 }
 
 .header-list {
+    list-style: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -65,6 +72,7 @@ body {
 }
 
 .address-list {
+    list-style: none;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -87,22 +95,25 @@ body {
     color: #ffffff;
 }
 
-.button {
-    font-style: inherit;
+.hero-btn {
+    color:#ffffff;
+}
+
+.btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    color: #ffffff;
+    /*color: #ffffff;*/
     background-color: #4d5ae5;
     border: 0px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.btn:hover,
+.btn:focus {
     background: color #404bbf;
 }
 
@@ -123,17 +134,23 @@ body {
     /*color: #434455;*/
 }
 
-/*--section2--*/
+/*--section3--*/
 
 
-/*team*/
 .team-section {
-    background-color: #F4F4FD;
+    background-color: #f4f4fd
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2e2f42
 }
 
-.team-card-bg {
+*.team-card-bg {
+    list-style: none;
     background-color: #FFFFFF;
-}
+}*/
 
 /*footer*/
 .footer-section {
