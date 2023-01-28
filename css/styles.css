@@ -147,10 +147,27 @@ body {
     color: #2e2f42
 }
 
-*.team-card-bg {
+.team-card-bg {
     list-style: none;
     background-color: #FFFFFF;
-}*/
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.member-psition {
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 
 /*footer*/
 .footer-section {
