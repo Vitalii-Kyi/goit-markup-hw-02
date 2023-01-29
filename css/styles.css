@@ -1,20 +1,19 @@
-/*
-root {
-
-}
-*/
-
-
 /*--------General styles--------*/
+:root {
+    --primary-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --dark-color: #2e2f42;
+    --btn-color: #ffffff;
+    --light-color: #f4f4fd;
+    --accept-color: #e7e9fc;
+    --general-text-color: #434455;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background: ffffff;
+    color: var(--general-text-color);
 }
-
-
-
-
 
 /*--section-1 & portfolio page--*/
 .visually-hidden {
@@ -42,12 +41,12 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {
-    color: #404bbf;
+    color: var(--pressed-state-color);
 }
 
 /*--------header--------*/
 
-.logo {
+.logo-header {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -56,11 +55,11 @@ body {
     
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: var(--primary-brand-color);
 }
 
 .logo-studio {
-    color: #2e2f42;
+    color: var(--dark-color);
 }
 
 .nav-list {
@@ -69,7 +68,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2f2f42;
+    color: var(--dark-color);
 }
 
 .address-list {
@@ -78,30 +77,26 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: inherit
 }
 
-.address-lis:hover,
-.address-lis:focus {
-    background: color #404bbf;
+.address-list:hover,
+.address-list:focus {
+    color: var(--pressed-state-color);
 }
 
 /*--------Hero--------*/
 .hero-section {
-    background-color: #2e2f42;
+    background-color: var(--dark-color);
 }
 
 .hero-title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1/07;
-    text-align: center;
+    line-height: 1.07;
+    
     letter-spacing: 0.02em;
-    color: #ffffff;
-}
-
-.hero-btn {
-    color:#ffffff;
+    color: var(--btn-color);
 }
 
 .btn {
@@ -109,9 +104,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
-    color: #ffffff;
-    background-color: #4d5ae5;
+    color: var(--btn-color);
+    background: var(--primary-brand-color);
     border: 0px;
     border-radius: 4px;
     cursor: pointer;
@@ -119,7 +113,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background: color #404bbf;
+    background: var(--pressed-state-color);
 }
 
 /*--section1--*/
@@ -129,7 +123,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--dark-color);
 }
 
 .advantages-list {
@@ -143,18 +137,18 @@ body {
 
 
 .team-section {
-    background-color: #f4f4fd
+    background-color: var(--light-color);
 }
 .team-title {
-    font-weight: 700;
+    
     font-size: 36px;
     line-height: 1.11;
-    color: #2e2f42
+    color: var(--dark-color);
 }
 
 .team-card-bg {
     list-style: none;
-    background-color: #FFFFFF;
+    background-color: var(--btn-color);
 }
 
 .team-member {
@@ -163,40 +157,78 @@ body {
     line-height: 1.2;
     
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--dark-color);
 }
 
-.member-psition {
+.member-position {
     font-size: 16px;
     line-height: 1.5;
 
     letter-spacing: 0.02em;
-    color: #434455;
+    /*color: #434455*/
 }
 
-/*footer*/
+/*--footer--*/
 .footer-section {
-    background-color: #2F303A;
+    background-color: var(--dark-color);
 }
 
 .logo-footer {
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: var(--primary-brand-color);
 }
 
 .logo-footer-studio {
-    color: #f4f4fd;
+    color: var(--light-color);
 }
 
 .invitation {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #e7e9fc;   
+    color: var(--accept-color);
+}
+
+/*--------portfolio--------*/
+/*--filter--*/
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+    background: var(--light-color);
+    border: 1px solid var(--accept-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--btn-color);
+    background: var(--pressed-state-color);
+}
+
+/*--project card--*/
+
+.project-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+
+.category-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    /*color: #434455;*/
 }
