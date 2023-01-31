@@ -9,6 +9,14 @@
     --general-text-color: #434455;
 }
 
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -30,29 +38,14 @@ body {
   }
 /*------------------------------*/
 
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.current {
-    color: var(--pressed-state-color);
-}
 
 /*--------header--------*/
 
 .logo-header {
-    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand-color);
@@ -62,13 +55,19 @@ body {
     color: var(--dark-color);
 }
 
-.nav-list {
-    list-style: none;
+.nav-link {
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
+    color: var(--pressed-state-color);
 }
 
 .address-list {
@@ -77,7 +76,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: inherit
+    color: var(--general-text-color);
 }
 
 .address-list:hover,
@@ -91,10 +90,8 @@ body {
 }
 
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    
     letter-spacing: 0.02em;
     color: var(--btn-color);
 }
@@ -130,17 +127,23 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /*color: #434455;*/
+}
+
+/*--section2--*/
+
+.services-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
 }
 
 /*--section3--*/
-
 
 .team-section {
     background-color: var(--light-color);
 }
 .team-title {
-    
     font-size: 36px;
     line-height: 1.11;
     color: var(--dark-color);
@@ -163,12 +166,11 @@ body {
 .member-position {
     font-size: 16px;
     line-height: 1.5;
-
     letter-spacing: 0.02em;
-    /*color: #434455*/
 }
 
 /*--footer--*/
+
 .footer-section {
     background-color: var(--dark-color);
 }
@@ -199,6 +201,7 @@ body {
 /*--filter--*/
 
 .filter-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -230,5 +233,4 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /*color: #434455;*/
 }
